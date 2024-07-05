@@ -1,16 +1,10 @@
-import React, { ReactNode } from 'react';
-import './globals.css';
-
-interface RootLayoutProps {
-    children: ReactNode;
-}
-
-const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
+export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html>
+            <head>
+                <title>Grade Fetcher</title>
+            </head>
             <body>{children}</body>
         </html>
     );
-};
-
-export default RootLayout;
+}
